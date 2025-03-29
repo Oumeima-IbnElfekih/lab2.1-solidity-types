@@ -1,5 +1,3 @@
-# lab2.1-solidity-types
-Types solidity - Manipulation et Stockage
 ### **Lab 1 : Types solidity - Manipulation et Stockage**
 
 **Description du Lab**
@@ -42,7 +40,7 @@ Avant de commencer ce lab, assurez-vous d'avoir configuré votre environnement c
 
 ### **Étapes du Lab**
 
-**1\. Préparer l'environnement**  
+**1. Préparer l'environnement**  
  
 
 **Installer les dépendances** en utilisant npm :  
@@ -70,9 +68,9 @@ module.exports = {
 
     sepolia: {
 
-      url: \`https://sepolia.infura.io/v3/YOUR\_INFURA\_KEY\`,
+      url:`https://sepolia.infura.io/v3/YOUR_INFURA_KEY`,
 
-      accounts: \[\`0x${YOUR\_PRIVATE\_KEY}\`\],
+      accounts:[`0x${YOUR_PRIVATE_KEY}`],
 
     },
 
@@ -89,7 +87,7 @@ module.exports = {
 
 - - -
 
-**2\. Créer le contrat solidity**
+**2. Créer le contrat solidity**
 
 1.  Créez un fichier contracts/Typessolidity.sol dans le répertoire **contracts/**.  
      
@@ -132,21 +130,21 @@ contract Typessolidity {
 
     // Fonction pour définir les variables
 
-    function setBool(bool \_boolVar) public {
+    function setBool(bool_boolVar) public {
 
-        boolVar = \_boolVar;
-
-    }
-
-    function setUser(address userAddr, string memory \_name, uint \_age) public {
-
-        users\[userAddr\] = User(\_name, \_age);
+        boolVar =_boolVar;
 
     }
 
-    function setEnum(Status \_status) public {
+    function setUser(address userAddr, string memory_name, uint_age) public {
 
-        currentStatus = \_status;
+        users[userAddr] = User(_name,_age);
+
+    }
+
+    function setEnum(Status_status) public {
+
+        currentStatus =_status;
 
     }
 
@@ -177,7 +175,7 @@ contract Typessolidity {
 
 - - -
 
-**3\. Déployer le contrat sur Sepolia**
+**3. Déployer le contrat sur Sepolia**
 
 1.  **Créer un script de déploiement** dans **scripts/deploy.js** :  
      
@@ -186,7 +184,7 @@ contract Typessolidity {
 
 async function main() {
 
-    const \[deployer\] = await ethers.getSigners();
+    const[deployer] = await ethers.getSigners();
 
     console.log("Déployé par : ", deployer.address);
 
@@ -227,7 +225,7 @@ npx hardhat run scripts/deploy.js --network sepolia
 
 - - -
 
-**4\. Interagir avec le contrat via Hardhat**
+**4. Interagir avec le contrat via Hardhat**
 
 1.  Après le déploiement, créez un fichier **scripts/interact.js** pour interagir avec le contrat déployé :  
      
@@ -236,9 +234,9 @@ npx hardhat run scripts/deploy.js --network sepolia
 
 async function main() {
 
-    const \[deployer\] = await ethers.getSigners();
+    const[deployer] = await ethers.getSigners();
 
-    const contractAddress = "VOTRE\_ADRESSE\_DE\_CONTRAT"; // Remplacez par l'adresse du contrat déployé
+    const contractAddress = "VOTRE_ADRESSE_DE_CONTRAT"; // Remplacez par l'adresse du contrat déployé
 
     const contract = await ethers.getContractAt("Typessolidity", contractAddress);
 
@@ -280,7 +278,7 @@ Cela interagira avec le contrat déployé, mettra à jour la variable booléenne
 
 - - -
 
-**5\. Vérification des résultats sur Sepolia via Etherscan**
+**5. Vérification des résultats sur Sepolia via Etherscan**
 
 *   Une fois le contrat déployé et les interactions effectuées, vous pouvez vérifier les résultats sur Sepolia Etherscan.  
      
@@ -348,4 +346,3 @@ lab-solidity-types/
      
 
 Avoir acquis des compétences pour vérifier et interagir avec les contrats déployés sur la blockchain.
-
