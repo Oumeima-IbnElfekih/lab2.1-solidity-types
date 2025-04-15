@@ -43,12 +43,12 @@ Avant de commencer ce lab, assurez-vous d'avoir configuré votre environnement c
 **1. Préparer l'environnement**  
  
 
-**Create a new Hardhat project** 
+1. **Create a new Hardhat project** 
 
 En suivant :  https://hardhat.org/tutorial/creating-a-new-hardhat-project
 
 
-1.  **Vérifier la configuration de Hardhat** :  
+2.  **Vérifier la configuration de Hardhat** :  
      
     *   Assurez-vous que vous avez le fichier **hardhat.config.js** configuré pour Sepolia comme suit :  
          
