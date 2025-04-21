@@ -54,7 +54,7 @@ En suivant :  https://hardhat.org/tutorial/creating-a-new-hardhat-project
          
 
 ```javascript  
-require('@nomiclabs/hardhat-ethers');
+require('@nomicfoundation/hardhat-toolbox');
 
 module.exports = {
 

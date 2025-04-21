@@ -1,0 +1,32 @@
+{
+  "name": "lab-solidity-types",
+  "version": "1.0.0",
+  "description": "Ce lab vise à vous familiariser avec les types de données de base de solidity, qui sont essentiels pour tout développement de smart contract. Vous apprendrez à manipuler différents types de données tels que uint, int, address, bool, bytes, string, bytes32, enum, struct, et mapping.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Oumeima-IbnElfekih/lab2.1-solidity-types.git"
+  },
+  "keywords": [
+    "node",
+    "js"
+  ],
+  "author": "IBN ELFEKIH Oumeima",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Oumeima-IbnElfekih/lab2.1-solidity-types/issues"
+  },
+  "homepage": "https://github.com/Oumeima-IbnElfekih/lab2.1-solidity-types#readme",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-ethers": "^3.0.8",
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "ethers": "^6.13.5",
+    "hardhat": "^2.23.0"
+  },
+  "dependencies": {
+    "dotenv": "^16.5.0"
+  }
+}
